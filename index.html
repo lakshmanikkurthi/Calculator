@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" id="display" disabled>
+                </div>
+                <div class="operator">
+                    <input type="button" value="AC" data-value="" id="clear">
+                    <input type="button" value="DE" id="delete" class="btn">
+                    <input type="button" value="." class="btn" data-value=".">
+                    <input type="button" value="/" class="btn" data-value="/">
+                </div>
+                <div>
+                    <input type="button" value="7" class="btn" data-value="7">
+                    <input type="button" value="8" class="btn" data-value="8">
+                    <input type="button" value="9" class="btn" data-value="9">
+                    <input type="button" value="*" class="btn" data-value="*">
+                </div>
+                <div>
+                    <input type="button" value="4" class="btn" data-value="4">
+                    <input type="button" value="5" class="btn" data-value="5">
+                    <input type="button" value="6" class="btn" data-value="6">
+                    <input type="button" value="-" class="btn" data-value="-">
+                </div>
+                <div>
+                    <input type="button" value="1" class="btn" data-value="1">
+                    <input type="button" value="2" class="btn" data-value="2">
+                    <input type="button" value="3" class="btn" data-value="3">
+                    <input type="button" value="+" class="btn" data-value="+">
+                </div>
+                <div class="four">
+                    <input type="button" value="00" class="btn" data-value="00">
+                    <input type="button" value="0" class="btn" data-value="0">
+                    <input type="button" value="=" class="equal" id="equal">
+                </div>
+                <input type="button" value="Show History" id="toggle-history" title="click 'h' to show history">
+                
+                <div id="history" style="display: none;">
+                    <div id="history-entries"></div> 
+                    <button id="clrscr" title="click 'c' to clear history">Clear History</button> 
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
